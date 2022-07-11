@@ -1,8 +1,8 @@
 let resume = {}
 
-function addDetails(label,value){
-    resume[label] = value;
-    display();
+function addDetails(key,value){
+    resume[key] = value;
+    display()
 }
 
 function display(){
