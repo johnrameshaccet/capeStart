@@ -20,13 +20,135 @@
                 </div>
                 <div class="mb-3">
                   <label for="inputPassword2" class="visually-hidden">Email</label>
-                  <input type="email" onkeyup="addDetails('email',this.value)" class="form-control" id="inputPassword2" placeholder="Password">
+                  <input type="text" onkeyup="addDetails('executive_summary',this.value)" class="form-control" id="inputPassword2" placeholder="Executive Summary">
                 </div>
                 <div class="mb-3">
-                  <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                  <label for="inputPassword2" class="visually-hidden">Declaration</label>
+                  <input type="text" onkeyup="addDetails('declaration',this.value)" class="form-control" id="inputPassword2" placeholder="Declaration">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Date</label>
+                  <input type="text" onkeyup="addDetails('date',this.value)" class="form-control" id="inputPassword2" placeholder="Date">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Place</label>
+                  <input type="text" onkeyup="addDetails('place',this.value)" class="form-control" id="inputPassword2" placeholder="Place">
+                </div>
+                <!-- <img src="https://i.postimg.cc/xdxC6mJf/stef-pic.png"/> -->
+                <label>Select your skill </label>
+                <select class="mb-3" multiple onchange="addDetails('skill',this.options)" >
+                  <option value="skill-1">Above intermediate in c,c++</option>
+                  <option value="skill-2">Intermediate in java, python</option>
+                  <option value="skill-3">Basic of javascript</option>
+                  <option value="skill-4">Knowledge of Semiconductor/VLSI design</option>
+                </select>
+                <label>Certification</label>
+                <select class="mb-3" multiple onchange="addDetails('certification',this.options)" >
+                  <option value="cer-1">British English certification</option>
+                  <option value="cer-2">Workshop in python[NIT]</option>
+                  <option value="cer-3">Seminar in IOT[HICET]</option>
+                  
+                </select>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Course</th>
+                      <th scope="col">Percentage</th>
+                      <th scope="col">Board</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,0,'course')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,0,'percentage')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,0,'board')" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,1,'course')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,1,'percentage')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,1,'board')" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td ><input type="text"  onkeyup="addDetails('education',this.value,2,'course')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,2,'percentage')" ></td>
+                      <td><input type="text"  onkeyup="addDetails('education',this.value,2,'board')" ></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Contact Details</p>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Declaration</label>
+                  <input type="text" onkeyup="addDetails('contact',this.value,0,'address')" class="form-control" id="inputPassword2" placeholder="Address">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Declaration</label>
+                  <input type="number" onkeyup="addDetails('contact',this.value,0,'phone_number')" class="form-control" id="inputPassword2" placeholder="phone number">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Declaration</label>
+                  <input type="email" onkeyup="addDetails('contact',this.value,0,'email')" class="form-control" id="inputPassword2" placeholder="E-mail">
+                </div>
+                <p>Personal Reference</p>
+                <div class="mb-3">
+                  <label for="inputPassword2" class="visually-hidden">Declaration</label>
+                  <input type="email" onkeyup="addDetails('personal',this.value,0,'dob')" class="form-control" id="inputPassword2" placeholder="Date of Birth">
+                </div>
+                
+                <p>Gender</p>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" onclick="addDetails('personal',this.value,0,'gender')"  type="radio" name="flexRadioDefault2" id="flexRadioDefault1" value="Male">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" onclick="addDetails('personal',this.value,1,'gender')" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value="Female">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+                <p>Martial Status</p>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" onclick="addDetails('personal',this.value,0,'martial')"  type="radio" name="flexRadioDefault1" id="flexRadioDefault1" value="Unmarried">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Unmarried
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" onclick="addDetails('personal',this.value,1,'martial')" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" value="married">
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Married
+                  </label>
+                </div>
+                <p>language Known</p>
+                
+                <select class="mb-3" multiple onchange="addDetails('personal',this.options,0,'language')" >
+                  <option value="english">English</option>
+                  <option value="tamil">Tamil</option>
+                  <option value="malayalam">Malayalam</option>
+                  <option value="hindi">Hindi</option>
+                </select>
+                <div class="mb-3">
+                  <button type="button" onclick="api()" class="btn btn-primary mb-3">Confirm identity</button>
                 </div>
               </form>
           </div>
+          <div class="mb-3">
+            <button type="button" onclick="getdata()" class="btn btn-primary mb-3">Load data</button>
+          </div>
+          <table border="3">
+            <thead>
+                <th>id</th>
+                <th>user</th>
+                <th>date</th>
+                <th>action</th>
+            </thead>
+            <tbody id="main"></tbody>
+           </table>
           <div class="col">
             <pre>
                 <code id="code">
@@ -36,12 +158,10 @@
           </div>
         </div>
         </div>
-      </div>
-    
-
-    
+      </div>    
 </body>
 <script src="js/main.js" type="text/javascript"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </html>
