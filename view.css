@@ -1,0 +1,101 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-size: 17px;
+}
+.wrapping-box
+{
+    margin:20px 80px 0px;
+}
+.top-img
+{
+    padding:30px 10px;
+    text-align: center;
+    color:white;
+}
+.header
+{
+    background-color:cadetblue;
+}
+.first-column
+{
+    background-color: cadetblue;
+    color:white;
+}
+.second-column
+{
+    background-color: white;
+}
+.jino-photo img
+{
+    width:130px;
+    height:160px;
+    margin:20px 100px;
+    border-radius: 80px;
+}
+.contact p
+{
+    list-style-type: none;
+    text-align: center;
+}
+.contact p img
+{
+   width:30px;
+   height:30px;
+   margin-right:10px;
+}
+hr
+{
+    background-color:white;
+}
+.technical-skills h4
+{
+   text-align:center;
+}
+.technical-skills li
+{
+   list-style-position: inside;
+}
+.technical-skills p
+{
+    margin-left:20px;
+}
+.career
+{
+    text-indent: 20px;;
+}
+.project
+{
+    text-align: center;
+}
+.address li
+{
+    list-style-type:none;
+    list-style-position: inside;
+    margin-left:150px;
+}
+.declaration
+{
+    text-indent: 50px;
+}
+.end-box
+{
+    float:right;
+}
+.end-box h6
+{
+    margin-right:50px;
+}
+.lang li
+{
+    list-style-position: inside;
+}
+.lang_known h4
+{
+    text-align: center;
+}
+.hoby li
+{
+    list-style-position:inside ;
+}
